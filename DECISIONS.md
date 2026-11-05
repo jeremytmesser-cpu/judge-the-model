@@ -11,8 +11,8 @@ For each dataset: positive class; which error matters more for the job (missed p
 - diabetes: Doctor diagnosis or HbA1c ≥ 6.5%. Missing a true positive matters more because the goal is to find adults who need follow-up testing or treatment; a false alarm usually leads to an extra check rather than a serious clinical consequence.
 
 ## Recommendations
-- readmission: <model and threshold, or "none is adequate for this job"> because ...
-- diabetes: ...
+- readmission: Logistic regression at a moderate threshold, around 0.40, because it has the strongest test AUROC and is easier to interpret than the more complex models, but it should still be used with clinician review because no model is strong enough for fully automatic discharge decisions.
+- diabetes: Logistic regression at a moderate threshold, around 0.35, because it performs best on the test set and the cost of missing a positive case is higher than the cost of a false alarm; the threshold should be tuned to prioritize sensitivity while keeping the flagged group manageable.
 
 ## Design choice and AI use
 A few sentences each. The design choice must be your own idea, not an AI tool's.
