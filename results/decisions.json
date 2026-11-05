@@ -1,0 +1,28 @@
+{
+  "exported_at": "2026-11-05T21:36:22Z",
+  "words": 0,
+  "word_limit": 150,
+  "sections": {
+    "before_results": {
+      "readmission": "",
+      "diabetes": ""
+    },
+    "recommendations": {
+      "readmission": "",
+      "diabetes": ""
+    },
+    "design": {
+      "design_choice": "",
+      "ai_turned_down": ""
+    }
+  },
+  "complete": {
+    "before_results": false,
+    "recommendations": false,
+    "design": false
+  },
+  "recommendations": {
+    "readmission": "",
+    "diabetes": ""
+  }
+}
